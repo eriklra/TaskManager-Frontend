@@ -1,0 +1,44 @@
+.dynamic-table-container {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    margin: 5px;
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+
+.dynamic-table {
+    margin: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+
+.dynamic-table table {
+    width: 98.5%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.dynamic-table th,
+.dynamic-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.dynamic-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.dynamic-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+.dynamic-table tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+.dynamic-table td {
+    min-width: 100px; /* Ancho mínimo de las celdas */
+}

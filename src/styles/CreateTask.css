@@ -1,0 +1,56 @@
+
+
+.createtask-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    text-align: center;
+}
+
+.createtask-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1E1E1E;
+}
+
+.createtask-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.createtask-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #1E1E1E; /* Define el color del texto */
+    background-color: #f9f9f9; /* Si quieres ajustar el fondo */
+}
+
+.createtask-textarea {
+    height: 100px;
+    resize: none;
+}
+
+.createtask-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #e0e0e0;
+    color: #1E1E1E;
+    border: 2px solid rgba(48, 39, 39, 0.87);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.createtask-button:hover {
+    background-color: #d0d0d0;
+    border-color: #1E1E1E;
+}

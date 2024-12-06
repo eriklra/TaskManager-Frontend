@@ -1,0 +1,6 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegúrate de que la aplicación ocupa al menos toda la altura de la ventana */
+    max-width: 100%;
+}

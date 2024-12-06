@@ -1,0 +1,37 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Centra verticalmente en la pantalla */
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem; /* Ajusta el tamaño del título */
+    margin-bottom: 1rem;
+    color: #1E1E1E;
+}
+
+.author {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto del autor */
+    margin-bottom: 2rem;
+    color: #1E1E1E;
+}
+
+.enter-button {
+    padding: 0.75rem 1.5rem; /* Tamaño del botón */
+    font-size: 1rem; /* Ajusta el tamaño del texto del botón */
+    color: #1E1E1E; /* Color del texto */
+    background-color: #e0e0e0; /* Color de fondo ligeramente más oscuro que el fondo */
+    border: 2px solid rgba(48, 39, 39, 0.87); /* Contorno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Efecto de transición */
+}
+
+.enter-button:hover {
+    background-color: #d0d0d0; /* Color de fondo al pasar el ratón */
+    border-color: #1E1E1E; /* Color del contorno al pasar el ratón */
+}

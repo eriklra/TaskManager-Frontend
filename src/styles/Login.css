@@ -1,0 +1,62 @@
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1E1E1E;
+}
+
+.login-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; /* Espacio entre elementos */
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1E1E1E;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho */
+    margin-bottom: 1rem;
+    color: #1E1E1E; /* Define el color del texto */
+    background-color: #f9f9f9; /* Si quieres ajustar el fondo */
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 1rem;
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #333;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* Ajustar el ancho para pantallas más pequeñas */
+        padding: 10px; /* Reducir el padding */
+    }
+}

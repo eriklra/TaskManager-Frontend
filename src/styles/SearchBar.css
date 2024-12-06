@@ -1,0 +1,99 @@
+.search-bar {
+    display: flex;
+    flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.search-fields {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Permite que esta sección crezca */
+    gap: 10px; /* Espacio entre los inputs */
+}
+
+.search-bar input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: border-color 0.3s;
+    flex: 1 1 40px; /* Flex shrink y grow para que tengan un tamaño adecuado */
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.search-bar input:focus {
+    border-color: #1E1E1E;
+    outline: none;
+}
+
+.search-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilos para los botones */
+#search-button, #upload-button, #download-button {
+    padding: 6px; /* Espaciado interno de los botones */
+    border: 2px solid #1E1E1E; /* Borde oscuro */
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1 1 20px; /* Flex shrink y grow para que tengan un tamaño adecuado */
+}
+
+/* Botón Buscar */
+#search-button {
+    background-color: #1E1E1E; /* Fondo oscuro */
+    color: #F5F5F5; /* Color del texto */
+}
+
+#search-button:hover {
+    background-color: #F5F5F5; /* Fondo claro al pasar el mouse */
+    color: #1E1E1E; /* Cambia el texto a oscuro */
+}
+
+/* Botón Subir Excel */
+#upload-button {
+    background-color: #F5F5F5; /* Fondo claro */
+    color: #1E1E1E; /* Color del texto */
+}
+
+#upload-button:hover {
+    background-color: #1E1E1E; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Botón Descargar Excel */
+#download-button {
+    background-color: #F5F5F5; /* Fondo claro */
+    color: #1E1E1E; /* Color del texto */
+}
+
+#download-button:hover {
+    background-color: #1E1E1E; /* Fondo oscuro al pasar el mouse */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .search-buttons {
+        width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
+        justify-content: space-between; /* Espacio entre los botones */
+    }
+
+    .search-buttons button {
+        width: 100%; /* Los botones ocupan todo el ancho */
+        margin-bottom: 10px; /* Espacio entre botones cuando están apilados */
+    }
+}

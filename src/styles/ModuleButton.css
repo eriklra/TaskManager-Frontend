@@ -1,0 +1,48 @@
+.module-button {
+    flex: 0 0 calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px; /* Ajusta según lo necesites */
+    height: 200px; /* Ajusta según lo necesites */
+    border-radius: 12px; /* Bordes redondeados */
+    background-color: #f5f5f5; /* Color de fondo */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #1E1E1E; /* Color del texto */
+    margin: 10px; /* Espacio entre botones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para el botón */
+    transition: transform 0.2s; /* Efecto al pasar el ratón */
+}
+
+.module-button:hover {
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el ratón */
+}
+
+.module-button-content {
+    text-align: center; /* Centrar contenido */
+}
+
+.module-button-image {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 8px; /* Espacio entre imagen y título */
+}
+
+.module-button-title {
+    font-size: 1rem; /* Ajusta el tamaño de fuente */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+
+@media (max-width: 768px) {
+    .module-button {
+        flex: 0 0 calc(50% - 20px); /* Dos botones por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .module-button {
+        flex: 0 0 calc(100% - 20px); /* Un botón por fila en pantallas pequeñas */
+    }
+}
